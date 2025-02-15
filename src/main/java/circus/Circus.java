@@ -1,5 +1,9 @@
 package circus;
 
+import java.lang.reflect.AnnotatedArrayType;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import circus.animal.Animal;
 import circus.animal.Duck;
 import circus.animal.Parrot;
@@ -44,5 +48,9 @@ public class Circus {
         makeAnimalsTalk();
         System.out.println("Total value of animals " + calculateAssetValue(animals));
         System.out.println("Total value of equipments " + calculateAssetValue(equipments));
+        ArrayList<Animal> animalArrayList = new ArrayList<>(Arrays.asList(animals));
+        for (Animal a: animalArrayList) {
+            System.out.println(a);
+        }
     }
 }
