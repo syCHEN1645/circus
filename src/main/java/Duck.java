@@ -10,6 +10,6 @@ public class Duck extends Bird {
     }
 
     public void swim() {
-        System.out.println("I'm swimming...");
+        System.out.println("I am swimming...");
     }
 }
