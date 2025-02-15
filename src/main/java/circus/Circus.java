@@ -1,13 +1,8 @@
 package circus;
 
-import java.lang.reflect.AnnotatedArrayType;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import circus.animal.Animal;
 import circus.animal.Duck;
 import circus.animal.Parrot;
-import circus.animal.Tiger;
 import circus.stuff.Cannon;
 import circus.stuff.Equipment;
 import circus.stuff.Ladder;
@@ -15,8 +10,7 @@ import circus.stuff.Ladder;
 public class Circus {
     private static Animal[] animals = {
             new Duck("Drake"),
-            new Parrot("Polly"),
-            new Tiger("Tai Lung")
+            new Parrot("Polly")
     };
     private static Equipment[] equipments = {
             new Ladder(50),
@@ -48,9 +42,5 @@ public class Circus {
         makeAnimalsTalk();
         System.out.println("Total value of animals " + calculateAssetValue(animals));
         System.out.println("Total value of equipments " + calculateAssetValue(equipments));
-        ArrayList<Animal> animalArrayList = new ArrayList<>(Arrays.asList(animals));
-        for (Animal a: animalArrayList) {
-            System.out.println(a);
-        }
     }
 }
